@@ -13,4 +13,10 @@ routes.get('/healthCheck', (req, res) => {
  res.status(200).json({ data: "working" });
 });
 
+
+routes.get('/',(req,res)=>{
+    res.status(200).json({status:true,msg:"working Fine!!"})
+})
+
+
 module.exports = routes
